@@ -1,0 +1,120 @@
+[class*="col-"], footer {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 6px;
+    line-height: 4Opx;
+    text-align: center;
+    color: white;
+}
+section{
+    border: 2px solid greenyellow;
+    border-radius: 6px;
+    line-height: 4Opx;
+    text-align: center;
+}
+header{
+    border: 2px solid greenyellow;
+    border-radius: 6px;
+    line-height: 4Opx;
+    text-align: center;
+}
+header a{
+    color: white;
+}
+header a:hover{
+    color: #ccc;
+}
+img{
+    width: 100%;
+}
+header{
+    text-align: center;
+}
+header img{
+    width: 15%;
+}
+header h1{
+    color: white;
+    font-size: 16 px;
+}
+
+
+/*Bootstrap responsive nav*/
+header nav .navbar-toggle .icon-bar{
+    background: white;
+    text-align: center;
+}
+header nav .navbar-toggle{
+    float: none;
+    margin-right: 0;
+}
+header nav ul li a{
+    color: white;
+    text-transform: uppercase;
+}
+header .nav > li > a:focus, header .nav > li > a:hover {
+    background: transparent;
+}
+header nav ul li a:hover {
+    color: #ddd;
+}
+/*img HP*/
+#imgaccueil{
+    padding: 20px 0px;
+}
+
+/*footer*/
+footer{
+    border: 2px solid greenyellow;
+    border-radius: 6px;
+    line-height: 4Opx;
+    text-align: center;
+    padding: 20px 0px;
+    margin-top: 20px;
+    text-align: center;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    color: #ccc;
+}
+#copyright{
+    margin-top: 10px;
+    padding: 10px;
+    color: white;
+    font-size: x-small;
+}
+/*Bootstrap media queries*/
+@media (min-width: 768px){
+    /*tablette*/
+    header{
+        padding: 10px 20px;
+    }
+    header img,footer img{
+        width: 100%;
+    }
+    header nav{
+        margin-top: 20px;
+    }
+    .navbar-nav > li > a {
+        padding: 0 2Opx;
+    }
+    .navbar-collapse{
+        padding: 0;
+    }
+}
+@media (min-width: 992){
+    /*lap-top*/
+    p{
+        font-size: 18px;
+        margin-left: 20px;
+        line-height: 30px;
+    }
+}
+@media (min-width: 1200px){
+    /*grand écran*/
+    p{
+        line-height: 40 px;
+    }
+}
