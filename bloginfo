@@ -1,0 +1,22 @@
+src : 
+  https://developer.wordpress.org/reference/functions/bloginfo/
+  
+  bloginfo( string $show = '' )
+Displays information about the current site.
+  
+  
+  
+        Possible values for $show : 
+        
+‘name‘ – Displays the “Site Title” set in Settings > General. 
+          This data is retrieved from the “blogname” record in the wp_options table.
+‘description‘ – Displays the “Tagline” set in Settings > General. 
+                This data is retrieved from the “blogdescription” record in the wp_options table.
+‘wpurl‘ – Displays the “WordPress address (URL)” set in Settings > General. 
+          This data is retrieved from the “siteurl” record in the wp_options table. 
+          Consider echoing site_url() instead, 
+          especially for multi-site configurations using paths instead of subdomains 
+          (it will return the root site not the current sub-site).
+‘url‘ – Displays the “Site address (URL)” set in Settings > General. 
+        This data is retrieved from the “home” record in the wp_options table. 
+        Consider echoing home_url() instead.
