@@ -20,3 +20,12 @@ Displays information about the current site.
 ‘url‘ – Displays the “Site address (URL)” set in Settings > General. 
         This data is retrieved from the “home” record in the wp_options table. 
         Consider echoing home_url() instead.
+‘stylesheet_url‘ – Displays the primary CSS (usually style.css) file URL of the active theme. 
+                   Consider echoing get_stylesheet_uri() instead.
+‘stylesheet_directory‘ – Displays the stylesheet directory URL of the active theme. 
+                         (Was a local path in earlier WordPress versions.) Consider echoing get_stylesheet_directory_uri() instead.
+‘template_url‘ / ‘template_directory‘ – URL of the active theme’s directory. 
+                                        Within child themes, both get_bloginfo(‘template_url’) and get_template() 
+                                        will return the parent theme directory. 
+                                        Consider echoing get_template_directory_uri() instead (for the parent template directory) 
+                                        or get_stylesheet_directory_uri() (for the child template directory).
